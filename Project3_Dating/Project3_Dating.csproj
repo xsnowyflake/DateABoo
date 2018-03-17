@@ -96,6 +96,7 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\logo.png" />
     <Content Include="Register.aspx" />
     <Content Include="Utilities\frmStyle.css" />
     <Content Include="Utilities\Utilities.csproj" />
