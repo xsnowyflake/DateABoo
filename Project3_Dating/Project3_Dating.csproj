@@ -82,6 +82,7 @@
     <Content Include="bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="bootstrap\css\bootstrap.css.map" />
     <Content Include="bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\it.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
