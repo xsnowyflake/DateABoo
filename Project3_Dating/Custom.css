@@ -1,0 +1,5 @@
+﻿body {
+    background: linear-gradient(45deg, grey, black);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
