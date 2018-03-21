@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Project3_Dating.Home" %>
 
 <!DOCTYPE html>
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -14,34 +13,42 @@
 
 <body>
     <%-- NAVBAR --%>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="Home.aspx">
-            <img src="Images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            DateABoo
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="Home.aspx">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Males</a>
-                        <a class="dropdown-item" href="#">Females</a>
-                        <a class="dropdown-item" href="#">Other</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item">
-                    <a class="nav-link" href="Register.aspx">Sign Up/Login</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.aspx" style="position: absolute;">
+                    <img alt="Brand" src="Images/logo.png" class="navbar-brand-image" style="width: 55px;" />
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#" style="font-size: x-large; margin-left: 30px">DateABoo</a></li>
+                </ul> 
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Males</a></li>
+                            <li><a href="#">Females</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Register.aspx" class="btn btn-default">Sign-Up</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
     <%-- /NAVBAR --%>
 
@@ -57,7 +64,7 @@
                 <hr class="my-4">
                 <p>Create an account now. It's free, it's fast, and it's fun!</p>
                 <p class="lead">
-                    <a class="btn btn-dark btn-lg" href="Register.aspx" role="button">Let's Get Started!
+                    <a class="btn btn-success btn-lg" href="Register.aspx" role="button">Let's Get Started!
                     </a>
                 </p>
             </div>
@@ -193,7 +200,7 @@
                                         <p class="text-left">
                                             <strong>Bio: </strong>
                                             <br>
-                                            Who needs a map? Because I'm lost in your eyes. ;) I'm an otaku. Pls notice me.           
+                                            Who needs a map? I do, because I'm lost in your eyes. ;) I'm an otaku. Pls notice me.           
                                         </p>
                                         <br>
                                         <span><strong>Commitment Level: </strong></span>
@@ -213,51 +220,53 @@
                             &nbsp&nbsp&nbsp&nbsp
                 <!-- Profile 4 -->
                 <div>        
-                    <a href="#aboutModal" data-toggle="modal" data-target="#myModal1"><img src="https://vignette.wikia.nocookie.net/rezero/images/0/02/Rem_Anime.png/revision/latest/scale-to-width-down/1000?cb=20160730213532" name="aboutme" width="140" height="140" class="img-circle"></a>
-                    <h3>
-            <%--            <asp:Label ID="lblName" runat="server"></asp:Label>--%>
-                        Rem
-                    </h3>
-                    <em>Click to learn more!</em>
+                    <a href="#aboutModal" data-toggle="modal" data-target="#myModal4">
+                        <div class="profileImage profileImage4"></div>
+                    </a>
+                    <h3>Lelouch</h3>
 
-            <!-- Modal 1 -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                            <h4 class="modal-title" id="myModalLabel1">More About Rem</h4>
+                    <!-- Modal 1 -->
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                        <h4 class="modal-title" id="myModalLabel4">More About Lelouch</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="profileImage profileImage4"></div>
+                                        <div>
+                                            <h3 class="media-heading">Lelouch <small>♂</small></h3>
+                                            <span><strong>Likes: </strong></span><br />
+                                            Chess, puzzles, politics, Gundams, masks<br />
+                                            <span class="label label-danger">Female</span>
+                                        </div>
+                                        <hr>
+
+                                        <p class="text-left">
+                                            <strong>Bio: </strong>
+                                            <br>
+                                            I want to find a partner that will help me change the world. I need someone close to share my secrets with. I can be pursuasive or always get what I want. I make killer jokes.        
+                                        </p>
+                                        <br>
+                                        <span><strong>Commitment Level: </strong></span>
+                                        <span class="label label-danger">Long-Term</span>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-default">Message Lelouch</button>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <center>
-                    <img src="https://vignette.wikia.nocookie.net/rezero/images/0/02/Rem_Anime.png/revision/latest/scale-to-width-down/1000?cb=20160730213532" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                    <h3 class="media-heading">Rem <small>Re:ZERO</small></h3>
-                    <span><strong>Likes: </strong></span>
-                        Cooking, cleaning, martial arts, and running
-                    </center>
-                            <hr>
-                            <center>
-                    <p class="text-left"><strong>Bio: </strong><br>
-                        I'm loyal to a fault, I'm super family oriented. I came onto this dating site to find my senpai that I'll love and cherish forever!
-                    </p>
-                    <br>
-                    <span><strong>Commitment Level: </strong></span>
-                    <span class="label label-success">Marriage</span>
-                    </center>
-                        </div>
-                        <div class="modal-footer">
-                            <center>
-                    <button type="button" class="btn btn-default">Message Rem</button>
-                    </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Modal 1 -->
+                    <!-- /Modal 1 -->
                 </div>
                 <!-- /Profile 4 -->
+               
             </div>
-
+                <hr />
+                <center><button type="button" class="btn btn-secondary btn-lg" onclick="Browse.aspx">See More...</button></center>
             &nbsp&nbsp&nbsp&nbsp
         </div>
         <%-- /PROFILE --%>
