@@ -42,6 +42,9 @@
     </nav>
     <%-- END NAVBAR--%>
 
+    <form id="form1" runat="server">
+
+    </form>
 
         <script
           src="https://code.jquery.com/jquery-3.3.1.js"

@@ -49,7 +49,8 @@
             <%-- COLLAPSE LOGIN --%>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a class="btn btn-lg btn-danger" data-toggle="collapse" data-parent="#accordion" href="#login">Login</a>
+                    <br /><br />
+                    <a class="btn btn-lg btn-info" data-toggle="collapse" data-parent="#accordion" href="#login">Login to Existing Account</a>
                 </div>
                 <div id="login" class="panel-collapse collapse in">
                     <div class="panel-body">
@@ -80,7 +81,7 @@
             <%-- COLLAPSE REGISTER--%>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a class=" btn btn-lg btn-danger" data-toggle="collapse" data-parent="#accordion" href="#register">Register</a>
+                    <a class=" btn btn-lg btn-info" data-toggle="collapse" data-parent="#accordion" href="#register">Create New Account</a>
                 </div>
                 <div id="register" class="panel-collapse collapse">
                     <div class="panel-body">
